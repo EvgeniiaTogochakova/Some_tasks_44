@@ -19,6 +19,10 @@ a {
     padding-right: calc(50% - 570px);
 }
 
+.desktop_tablet_none{
+    display: none;
+}
+
 .header {
     padding-top: 18px;
     padding-bottom: 18px;
@@ -255,7 +259,7 @@ catalog__card__price {
 }
 
 
-@media(max-width: 1024px) and (min-width: 768px) {
+@media(max-width: 1024px) {
 
     /* Стили для планшета */
     .center {
@@ -274,7 +278,6 @@ catalog__card__price {
 
     .promo__heading_h1 {
         font-size: 44px;
-        text-align: center;
     }
 
     .promo__heading_h2 {
@@ -306,4 +309,66 @@ catalog__card__price {
         padding-bottom: 32px;
     }
 
+}
+
+@media(max-width: 767px){
+    /* Стили для мобильных телефонов */
+    .center {
+        padding-left: calc(50% - 171.5px);
+        padding-right: calc(50% - 171.5px);
+    }
+
+    .desktop_tablet_none{
+        display: block;
+    }
+
+    .cellphone_none{
+        display: none;
+    }
+
+    .promo {
+        padding: 148px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .promo__heading_h1 {
+        font-size: 38px;
+    }
+
+    .promo__heading_h2 {
+        font-size: 20px;
+    }
+
+    .promo img{
+        display: none;
+    }
+
+
+    .categories {
+        padding-top: 64px;
+        grid-template-columns: 343px;
+        grid-template-rows: none;
+        gap: 32px;
+    }
+
+
+    .big {
+        grid-area: auto;
+    }
+
+
+    .featured_items {
+        padding-top: 64px;
+        padding-bottom: 85px;
+    }
+
+    .catalog {
+        gap: 16px;
+        grid-template-columns: 359px;
+        grid-template-rows: none;
+        padding-top: 65px;
+        padding-bottom: 41px;
+    }
 }
