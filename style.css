@@ -84,7 +84,6 @@ a {
     padding-top: 32px;
     padding-bottom: 32px;
     background-color: #FFF;
-    color: #6F6E6E;
     font-size: 14px;
     font-weight: 400;
 }
@@ -107,6 +106,10 @@ a {
     list-style-type: none;
     margin-bottom: 11px;
     padding-left: 53px;
+}
+
+.pull-menu ul li a {
+    color: #6F6E6E;
 }
 
 .hamburger input:checked~.pull-menu {
@@ -424,6 +427,8 @@ catalog__card__price {
     border-top-left-radius: 50px;
     border-bottom-left-radius: 50px;
     border: none;
+    border: 0;
+    outline: 0;
 
 }
 
